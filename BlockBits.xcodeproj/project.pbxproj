@@ -14,6 +14,11 @@
 		01314F97296CC6750076445C /* BlockBitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314F96296CC6750076445C /* BlockBitsTests.swift */; };
 		01314FA1296CC6750076445C /* BlockBitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FA0296CC6750076445C /* BlockBitsUITests.swift */; };
 		01314FA3296CC6750076445C /* BlockBitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FA2296CC6750076445C /* BlockBitsUITestsLaunchTests.swift */; };
+		01314FB1296CD3DF0076445C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 01314FB0296CD3DF0076445C /* Apollo */; };
+		01314FB7296CD6850076445C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FB6296CD6850076445C /* ApolloClient.swift */; };
+		01314FB8296CD6850076445C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FB6296CD6850076445C /* ApolloClient.swift */; };
+		01314FB9296CD6850076445C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FB6296CD6850076445C /* ApolloClient.swift */; };
+		01314FBF296CDD9A0076445C /* SwiftBloc in Frameworks */ = {isa = PBXBuildFile; productRef = 01314FBE296CDD9A0076445C /* SwiftBloc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,7 @@
 		01314F9C296CC6750076445C /* BlockBitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockBitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01314FA0296CC6750076445C /* BlockBitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBitsUITests.swift; sourceTree = "<group>"; };
 		01314FA2296CC6750076445C /* BlockBitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01314FB6296CD6850076445C /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01314FBF296CDD9A0076445C /* SwiftBloc in Frameworks */,
+				01314FB1296CD3DF0076445C /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,10 @@
 		01314F84296CC6700076445C /* BlockBits */ = {
 			isa = PBXGroup;
 			children = (
+				01314FB5296CD63A0076445C /* Tools */,
+				01314FB4296CD6010076445C /* Services */,
+				01314FB3296CD5FA0076445C /* Domain */,
+				01314FB2296CD5F40076445C /* App */,
 				01314F85296CC6700076445C /* BlockBitsApp.swift */,
 				01314F87296CC6700076445C /* ContentView.swift */,
 				01314F89296CC6740076445C /* Assets.xcassets */,
@@ -127,6 +139,83 @@
 			path = BlockBitsUITests;
 			sourceTree = "<group>";
 		};
+		01314FB2296CD5F40076445C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				01314FC1296CDF4D0076445C /* Blocs */,
+				01314FC0296CDF460076445C /* Presentation */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		01314FB3296CD5FA0076445C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				01314FC3296CDF5D0076445C /* Models */,
+				01314FC2296CDF540076445C /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		01314FB4296CD6010076445C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01314FC5296CDF8F0076445C /* Providers */,
+				01314FC4296CDF870076445C /* Adapters */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01314FB5296CD63A0076445C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				01314FB6296CD6850076445C /* ApolloClient.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		01314FC0296CDF460076445C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		01314FC1296CDF4D0076445C /* Blocs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Blocs;
+			sourceTree = "<group>";
+		};
+		01314FC2296CDF540076445C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		01314FC3296CDF5D0076445C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01314FC4296CDF870076445C /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		01314FC5296CDF8F0076445C /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +232,10 @@
 			dependencies = (
 			);
 			name = BlockBits;
+			packageProductDependencies = (
+				01314FB0296CD3DF0076445C /* Apollo */,
+				01314FBE296CDD9A0076445C /* SwiftBloc */,
+			);
 			productName = BlockBits;
 			productReference = 01314F82296CC6700076445C /* BlockBits.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +308,10 @@
 				Base,
 			);
 			mainGroup = 01314F79296CC6700076445C;
+			packageReferences = (
+				01314FAF296CD3DF0076445C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				01314FBD296CDD9A0076445C /* XCRemoteSwiftPackageReference "SwiftBloc" */,
+			);
 			productRefGroup = 01314F83296CC6700076445C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +356,7 @@
 			files = (
 				01314F88296CC6700076445C /* ContentView.swift in Sources */,
 				01314F86296CC6700076445C /* BlockBitsApp.swift in Sources */,
+				01314FB7296CD6850076445C /* ApolloClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01314F97296CC6750076445C /* BlockBitsTests.swift in Sources */,
+				01314FB8296CD6850076445C /* ApolloClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +375,7 @@
 			files = (
 				01314FA3296CC6750076445C /* BlockBitsUITestsLaunchTests.swift in Sources */,
 				01314FA1296CC6750076445C /* BlockBitsUITests.swift in Sources */,
+				01314FB9296CD6850076445C /* ApolloClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +683,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01314FAF296CD3DF0076445C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		01314FBD296CDD9A0076445C /* XCRemoteSwiftPackageReference "SwiftBloc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VictorKachalov/SwiftBloc.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01314FB0296CD3DF0076445C /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01314FAF296CD3DF0076445C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		01314FBE296CDD9A0076445C /* SwiftBloc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01314FBD296CDD9A0076445C /* XCRemoteSwiftPackageReference "SwiftBloc" */;
+			productName = SwiftBloc;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01314F7A296CC6700076445C /* Project object */;
 }
