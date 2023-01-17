@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		01314F86296CC6700076445C /* BlockBitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314F85296CC6700076445C /* BlockBitsApp.swift */; };
-		01314F88296CC6700076445C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314F87296CC6700076445C /* ContentView.swift */; };
 		01314F8A296CC6740076445C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01314F89296CC6740076445C /* Assets.xcassets */; };
 		01314F8D296CC6740076445C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01314F8C296CC6740076445C /* Preview Assets.xcassets */; };
 		01314F97296CC6750076445C /* BlockBitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314F96296CC6750076445C /* BlockBitsTests.swift */; };
@@ -19,6 +18,21 @@
 		01314FB8296CD6850076445C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FB6296CD6850076445C /* ApolloClient.swift */; };
 		01314FB9296CD6850076445C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01314FB6296CD6850076445C /* ApolloClient.swift */; };
 		01314FBF296CDD9A0076445C /* SwiftBloc in Frameworks */ = {isa = PBXBuildFile; productRef = 01314FBE296CDD9A0076445C /* SwiftBloc */; };
+		0138084F297609EF004AD219 /* LoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138084E297609EF004AD219 /* LoginAdapter.swift */; };
+		01380850297609EF004AD219 /* LoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138084E297609EF004AD219 /* LoginAdapter.swift */; };
+		01380851297609EF004AD219 /* LoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138084E297609EF004AD219 /* LoginAdapter.swift */; };
+		0138085329760AA2004AD219 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085229760AA2004AD219 /* HttpResponse.swift */; };
+		0138085429760AA2004AD219 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085229760AA2004AD219 /* HttpResponse.swift */; };
+		0138085529760AA2004AD219 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085229760AA2004AD219 /* HttpResponse.swift */; };
+		0138085729761884004AD219 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085629761884004AD219 /* LoginProvider.swift */; };
+		0138085829761884004AD219 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085629761884004AD219 /* LoginProvider.swift */; };
+		0138085929761884004AD219 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085629761884004AD219 /* LoginProvider.swift */; };
+		0138085B29761F70004AD219 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085A29761F70004AD219 /* HttpClient.swift */; };
+		0138085C29761F70004AD219 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085A29761F70004AD219 /* HttpClient.swift */; };
+		0138085D29761F70004AD219 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138085A29761F70004AD219 /* HttpClient.swift */; };
+		01CD7E892974C0860040B8FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD7E882974C0860040B8FD /* LoginView.swift */; };
+		01CD7E8A2974C0860040B8FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD7E882974C0860040B8FD /* LoginView.swift */; };
+		01CD7E8B2974C0860040B8FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD7E882974C0860040B8FD /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +55,6 @@
 /* Begin PBXFileReference section */
 		01314F82296CC6700076445C /* BlockBits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockBits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01314F85296CC6700076445C /* BlockBitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBitsApp.swift; sourceTree = "<group>"; };
-		01314F87296CC6700076445C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01314F89296CC6740076445C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01314F8C296CC6740076445C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01314F92296CC6750076445C /* BlockBitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockBitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +63,11 @@
 		01314FA0296CC6750076445C /* BlockBitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBitsUITests.swift; sourceTree = "<group>"; };
 		01314FA2296CC6750076445C /* BlockBitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01314FB6296CD6850076445C /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
+		0138084E297609EF004AD219 /* LoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdapter.swift; sourceTree = "<group>"; };
+		0138085229760AA2004AD219 /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		0138085629761884004AD219 /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		0138085A29761F70004AD219 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		01CD7E882974C0860040B8FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +125,6 @@
 				01314FB3296CD5FA0076445C /* Domain */,
 				01314FB2296CD5F40076445C /* App */,
 				01314F85296CC6700076445C /* BlockBitsApp.swift */,
-				01314F87296CC6700076445C /* ContentView.swift */,
 				01314F89296CC6740076445C /* Assets.xcassets */,
 				01314F8B296CC6740076445C /* Preview Content */,
 			);
@@ -170,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				01314FB6296CD6850076445C /* ApolloClient.swift */,
+				0138085229760AA2004AD219 /* HttpResponse.swift */,
+				0138085A29761F70004AD219 /* HttpClient.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -177,6 +196,7 @@
 		01314FC0296CDF460076445C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				01CD7E8C2974C0960040B8FD /* Login */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -205,6 +225,7 @@
 		01314FC4296CDF870076445C /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				0138084E297609EF004AD219 /* LoginAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -212,8 +233,17 @@
 		01314FC5296CDF8F0076445C /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				0138085629761884004AD219 /* LoginProvider.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		01CD7E8C2974C0960040B8FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				01CD7E882974C0860040B8FD /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,9 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01314F88296CC6700076445C /* ContentView.swift in Sources */,
+				0138085329760AA2004AD219 /* HttpResponse.swift in Sources */,
 				01314F86296CC6700076445C /* BlockBitsApp.swift in Sources */,
+				01CD7E892974C0860040B8FD /* LoginView.swift in Sources */,
 				01314FB7296CD6850076445C /* ApolloClient.swift in Sources */,
+				0138085B29761F70004AD219 /* HttpClient.swift in Sources */,
+				0138085729761884004AD219 /* LoginProvider.swift in Sources */,
+				0138084F297609EF004AD219 /* LoginAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0138085429760AA2004AD219 /* HttpResponse.swift in Sources */,
+				01CD7E8A2974C0860040B8FD /* LoginView.swift in Sources */,
 				01314F97296CC6750076445C /* BlockBitsTests.swift in Sources */,
 				01314FB8296CD6850076445C /* ApolloClient.swift in Sources */,
+				0138085C29761F70004AD219 /* HttpClient.swift in Sources */,
+				0138085829761884004AD219 /* LoginProvider.swift in Sources */,
+				01380850297609EF004AD219 /* LoginAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +412,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0138085929761884004AD219 /* LoginProvider.swift in Sources */,
+				0138085529760AA2004AD219 /* HttpResponse.swift in Sources */,
+				0138085D29761F70004AD219 /* HttpClient.swift in Sources */,
 				01314FA3296CC6750076445C /* BlockBitsUITestsLaunchTests.swift in Sources */,
 				01314FA1296CC6750076445C /* BlockBitsUITests.swift in Sources */,
+				01CD7E8B2974C0860040B8FD /* LoginView.swift in Sources */,
+				01380851297609EF004AD219 /* LoginAdapter.swift in Sources */,
 				01314FB9296CD6850076445C /* ApolloClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
